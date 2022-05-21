@@ -41,3 +41,11 @@ npx wdio run ./wdio.conf.js --mochaOpts.grep 'Your keyword'
 ```
 npx wdio run ./wdio.conf.js --suite smoke
 ```
+
+## How to custom config file
+
+Create separate config file and merge the parents object in custom file using deepmerge npm module
+
+```
+npx wdio run ./wdio.qa.conf.js --suite regression
+```

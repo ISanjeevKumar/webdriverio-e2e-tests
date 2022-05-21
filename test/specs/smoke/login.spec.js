@@ -6,7 +6,7 @@ describe('e2e test -login functionality', function () {
 
     userCreds.forEach(({ username, password }) => {
         it('should be able to login', async function () {
-            await browser.url('https://www.saucedemo.com/');
+            await browser.url('/');
             await expect(browser).toHaveTitleContaining('Swag Labs');
             await LoginPage.login(username, password);
         })
