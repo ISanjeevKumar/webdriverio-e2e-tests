@@ -28,7 +28,7 @@ pipeline {
                 reportBuildPolicy: 'ALWAYS',
                 results: [[path: 'allure-results']]
               ])
-            },
+            }
             deleteDir()
         }
     }
