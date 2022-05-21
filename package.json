@@ -15,5 +15,9 @@
     },
     "scripts": {
         "wdio": "wdio run wdio.conf.js"
+    },
+    "dependencies": {
+        "fs": "0.0.1-security",
+        "fs-extra": "^10.1.0"
     }
 }
