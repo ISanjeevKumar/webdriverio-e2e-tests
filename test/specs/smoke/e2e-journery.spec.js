@@ -1,4 +1,4 @@
-const LoginPage = require('../../page-objects/login.page');
+import { LoginPage } from '../../page-objects/app'
 
 describe('e2e test - user should be able to purchase item', function () {
 
