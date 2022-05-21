@@ -19,8 +19,25 @@ Also, integrated Allure report.
 npx wdio run ./wdio.conf.js
 ```
 
-## How to run selective WebDriverIO tests using grep command
+## How to run selective WebDriverIO tests in IT block using grep command
 
 ```
 npx wdio run ./wdio.conf.js --mochaOpts.grep 'Your keyword'
+```
+
+## How to run selective suites using command line arguments
+
+`Add below config in wdio.conf.js file`
+
+```
+   suites: {
+        smoke: ['./test/specs/smoke/**.spec.js'],
+        regression: ['./test/specs/regression/**.spec.js']
+    }
+```
+
+`Run command`
+
+```
+npx wdio run ./wdio.conf.js --suite smoke
 ```
