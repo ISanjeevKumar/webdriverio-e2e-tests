@@ -13,8 +13,14 @@ Also, integrated Allure report.
 - Retries of failed tests
 - Parallel Execution on sam
 
-## How to run Cypress tests
+## How to run WebDriverIO tests
 
 ```
 npx wdio run ./wdio.conf.js
+```
+
+## How to run selective WebDriverIO tests using grep command
+
+```
+npx wdio run ./wdio.conf.js --mochaOpts.grep 'Your keyword'
 ```
